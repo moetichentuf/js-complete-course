@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-    let whatever = "hello world!!!:)";
+    let whatever = "hello world!!!";
     alert(whatever);
     // your code here
 
