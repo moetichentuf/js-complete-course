@@ -10,6 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
+    var person = prompt("Please enter your name");
+
+
+
+        alert (person + '\n' +"How are you today?");
 
     // your code here
 
