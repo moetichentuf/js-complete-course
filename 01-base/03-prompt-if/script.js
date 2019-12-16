@@ -11,6 +11,15 @@
 
 (function() {
 
+    var txt;
+    var r = confirm("Do you want some cake?");
+    if (r == true) {
+        txt = "Congrats enjoy your cake!";
+        alert(txt)
+    } else {
+        txt = " More cake for me then :p !";
+        alert(txt)
+    }
   // your code here
 
 })();
