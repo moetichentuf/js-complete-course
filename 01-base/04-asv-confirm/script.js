@@ -9,7 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
+
+
+
 (function() {
+
+    var age = prompt("what is your age?");
+    var gender = prompt("what is your gender?");
+    var town = prompt("where do you live?");
+
+    alert (age + '\n' + gender+ '\n' + town );
+
 
     // your code here
 
