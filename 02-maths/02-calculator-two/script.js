@@ -13,43 +13,44 @@
 
         // to get the value of an input: document.getElementById("element-id").value
 
-    let op1 = prompt("Which operation?");
+    let class actions = prompt("Which operation?");
 
-    switch(op1) {
+    switch(actions) {
 
         case "addition":
             let numb1 = document.getElementById("op-one").value;
             let numb2 = document.getElementById("op-two").value;
-
-            alert(Number(numb1) + Number(numb2));
+            let result = numb1 + numb2;
+            alert(numb1 + " + " + numb2 + " = " + result);
             // perform an addition
             break;
 
-        case "addition":
+        case "substraction":
 
                 let numb1 = document.getElementById("op-one").value;
                 let numb2 = document.getElementById("op-two").value;
+                let result = numb1 - numb2;
+                alert(numb1 + "-" + numb2 + " = " + result);
 
-                alert(Number(numb1) - Number(numb2));
                 // perform an substraction
             break;
 
-            document.getElementById("multiplication").addEventListener("click", function () {
+        case "multiplication":
 
                 let numb1 = document.getElementById("op-one").value;
                 let numb2 = document.getElementById("op-two").value;
-
-                alert(Number(numb1) * Number(numb2));
+                let result = numb1 - numb2;
+                alert(numb1 + "*" + numb2 + " = " + result);
                 // perform an multiplication
-            });
+            break;
 
-            document.getElementById("division").addEventListener("click", function () {
+        case "division":
                 let numb1 = document.getElementById("op-one").value;
                 let numb2 = document.getElementById("op-two").value;
-
-                alert(Number(numb1) / Number(numb2));
+                let result = numb1 - numb2;
+                alert(numb1 + "/" + numb2 + " = " + result);
                 // perform an division
-            });
+            break;
 
     }
     })();
