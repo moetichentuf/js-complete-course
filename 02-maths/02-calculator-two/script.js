@@ -10,17 +10,17 @@
 // You will have time to focus on it later.
 
 
-(function(Calc) {
+function Calc(lala) {
     // to get the value of an input: document.getElementById("element-id").value
     let numb1 = document.getElementById("op-one").value;
     let numb2 = document.getElementById("op-two").value;
     let result;
 
 
-    switch (Calc){
+    switch (lala) {
 
         case 'addition':
-
+            result = parseInt(numb1) + parseInt(numb2);
             alert(result);
             break;
 
@@ -41,6 +41,5 @@
 
     }
 
+}
 
-
-})();
