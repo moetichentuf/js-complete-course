@@ -1,3 +1,4 @@
 -I added a switch but i am still trying to figure out how to make it work
 - restarting switch calculator and using first calculator as example
 - I added result but it isn't working
+- Changed name of Calc id (previous name was a test)
