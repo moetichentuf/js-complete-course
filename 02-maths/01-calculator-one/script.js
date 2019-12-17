@@ -15,8 +15,10 @@
     document.getElementById("addition").addEventListener("click", function() {
         let numb1 = document.getElementById("op-one").value;
         let numb2 = document.getElementById("op-two").value;
+        let a = parseInt(numb1);
+        let b = parseInt(numb2);
 
-             alert(parseInt(numb1) + parseInt(numb2));
+             alert(parseInt(a+b));
         // perform an addition
     });
 
@@ -25,7 +27,7 @@
         let numb1 = document.getElementById("op-one").value;
         let numb2 = document.getElementById("op-two").value;
 
-            alert(Number(numb1) - Number(numb2));
+            alert(parseInt(numb1) - parseInt(numb2));
         // perform an substraction
     });
 
@@ -34,7 +36,7 @@
         let numb1 = document.getElementById("op-one").value;
         let numb2 = document.getElementById("op-two").value;
 
-             alert(Number(numb1) * Number(numb2));
+             alert(parseInt(numb1) * parseInt(numb2));
         // perform an multiplication
     });
 
@@ -42,7 +44,7 @@
         let numb1 = document.getElementById("op-one").value;
         let numb2 = document.getElementById("op-two").value;
 
-            alert(Number(numb1) / Number(numb2));
+            alert(parseInt(numb1) / parseInt(numb2));
         // perform an division
     });
 
