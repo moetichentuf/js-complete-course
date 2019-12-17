@@ -16,7 +16,7 @@
         let numb1 = document.getElementById("op-one").value;
         let numb2 = document.getElementById("op-two").value;
 
-             alert(Number(numb1) + Number(numb2));
+             alert(parseInt(numb1) + parseInt(numb2));
         // perform an addition
     });
 
