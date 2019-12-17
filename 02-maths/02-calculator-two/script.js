@@ -10,84 +10,37 @@
 // You will have time to focus on it later.
 
 
-(function() {
+(function(Calc) {
     // to get the value of an input: document.getElementById("element-id").value
     let numb1 = document.getElementById("op-one").value;
     let numb2 = document.getElementById("op-two").value;
     let result;
-    switch (numb1,numb2){
 
-        case "multiplication":
-            result = numb1 * numb2;
+
+    switch (Calc){
+
+        case 'addition':
+
+            alert(result);
             break;
 
-        case "division":
-            result = numb1 / numb2;
+        case 'substraction':
+
+            alert(result);
             break;
 
-        case "addition":
-            result = numb1 + numb2;
+        case 'multiplication':
+
+            alert(result);
             break;
 
-        case "subtraction":
-            result = numb1 * numb2;
+        case 'division':
+            alert(result);
             break;
 
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    document.getElementById("addition").addEventListener("click", function() {
-        let numb1 = document.getElementById("op-one").value;
-        let numb2 = document.getElementById("op-two").value;
-        let a = parseInt(numb1);
-        let b = parseInt(numb2);
-
-        alert(parseInt(a+b));
-        // perform an addition
-    });
-
-    document.getElementById("substraction").addEventListener("click", function() {
-
-        let numb1 = document.getElementById("op-one").value;
-        let numb2 = document.getElementById("op-two").value;
-        let a = parseInt(numb1);
-        let b = parseInt(numb2);
-        alert(parseInt(a-b));
-        // perform an substraction
-    });
-
-    document.getElementById("multiplication").addEventListener("click", function() {
-
-        let numb1 = document.getElementById("op-one").value;
-        let numb2 = document.getElementById("op-two").value;
-        let a = parseInt(numb1);
-        let b = parseInt(numb2);
-        alert(parseInt(a*b));
-        // perform an multiplication
-    });
-
-    document.getElementById("division").addEventListener("click", function() {
-        let numb1 = document.getElementById("op-one").value;
-        let numb2 = document.getElementById("op-two").value;
-        let a = parseInt(numb1);
-        let b = parseInt(numb2);
-        alert(parseInt(a/b));
-        // perform an division
-    });
 
 
 })();
