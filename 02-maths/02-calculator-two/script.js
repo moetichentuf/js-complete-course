@@ -25,16 +25,17 @@ function Calc(lala) {
             break;
 
         case 'substraction':
-
+            result = parseInt(numb1) - parseInt(numb2);
             alert(result);
             break;
 
         case 'multiplication':
-
+            result = parseInt(numb1) * parseInt(numb2);
             alert(result);
             break;
 
         case 'division':
+            result = parseInt(numb1) / parseInt(numb2);
             alert(result);
             break;
 
