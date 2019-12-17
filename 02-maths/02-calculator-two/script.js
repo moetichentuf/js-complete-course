@@ -13,7 +13,7 @@
 
         // to get the value of an input: document.getElementById("element-id").value
 
-    let class actions = prompt("Which operation?");
+    let actions = document.getElementsByClassName("actions");
 
     switch(actions) {
 
