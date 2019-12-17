@@ -9,48 +9,85 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function test() {
 
-        // to get the value of an input: document.getElementById("element-id").value
-
-    let actions = document.getElementsByClassName("actions");
-
-    switch(actions) {
-
-        case "addition":
-            let numb1 = document.getElementById("op-one").value;
-            let numb2 = document.getElementById("op-two").value;
-            let result = numb1 + numb2;
-            alert(numb1 + " + " + numb2 + " = " + result);
-            // perform an addition
-            break;
-
-        case "substraction":
-
-                let numb1 = document.getElementById("op-one").value;
-                let numb2 = document.getElementById("op-two").value;
-                let result = numb1 - numb2;
-                alert(numb1 + "-" + numb2 + " = " + result);
-
-                // perform an substraction
-            break;
+(function() {
+    // to get the value of an input: document.getElementById("element-id").value
+    let numb1 = document.getElementById("op-one").value;
+    let numb2 = document.getElementById("op-two").value;
+    let result;
+    switch (numb1,numb2){
 
         case "multiplication":
-
-                let numb1 = document.getElementById("op-one").value;
-                let numb2 = document.getElementById("op-two").value;
-                let result = numb1 - numb2;
-                alert(numb1 + "*" + numb2 + " = " + result);
-                // perform an multiplication
+            result = numb1 * numb2;
             break;
 
         case "division":
-                let numb1 = document.getElementById("op-one").value;
-                let numb2 = document.getElementById("op-two").value;
-                let result = numb1 - numb2;
-                alert(numb1 + "/" + numb2 + " = " + result);
-                // perform an division
+            result = numb1 / numb2;
             break;
 
+        case "addition":
+            result = numb1 + numb2;
+            break;
+
+        case "subtraction":
+            result = numb1 * numb2;
+            break;
+
+
     }
-    })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    document.getElementById("addition").addEventListener("click", function() {
+        let numb1 = document.getElementById("op-one").value;
+        let numb2 = document.getElementById("op-two").value;
+        let a = parseInt(numb1);
+        let b = parseInt(numb2);
+
+        alert(parseInt(a+b));
+        // perform an addition
+    });
+
+    document.getElementById("substraction").addEventListener("click", function() {
+
+        let numb1 = document.getElementById("op-one").value;
+        let numb2 = document.getElementById("op-two").value;
+        let a = parseInt(numb1);
+        let b = parseInt(numb2);
+        alert(parseInt(a-b));
+        // perform an substraction
+    });
+
+    document.getElementById("multiplication").addEventListener("click", function() {
+
+        let numb1 = document.getElementById("op-one").value;
+        let numb2 = document.getElementById("op-two").value;
+        let a = parseInt(numb1);
+        let b = parseInt(numb2);
+        alert(parseInt(a*b));
+        // perform an multiplication
+    });
+
+    document.getElementById("division").addEventListener("click", function() {
+        let numb1 = document.getElementById("op-one").value;
+        let numb2 = document.getElementById("op-two").value;
+        let a = parseInt(numb1);
+        let b = parseInt(numb2);
+        alert(parseInt(a/b));
+        // perform an division
+    });
+
+
+})();
