@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("red").addEventListener("click", function () {
+
+        document.body.style.backgroundColor = "red";
+    });
 
 })();
