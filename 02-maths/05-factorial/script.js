@@ -9,14 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
     
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+var num = parseInt(document.getElementById("number").value);
+function factorial(num) {
 
-    });
 
+    var result = num;
+    for (var i = num - 1; i >= 1; i--) {
+        result *= i;
+    }
+    return result;
+
+} alert(factorial(num));
+})
 })();
