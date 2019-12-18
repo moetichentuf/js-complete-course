@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    var msg = ""
+    for(var i=1;i<=100;i++, msg=""){
+        if (!(i%3)) msg+="Fizz";
+        if (!(i%5)) msg+="Buzz";
+        console.log(msg || i);
+    }
 
 })();
