@@ -15,8 +15,10 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
-
+        function factorialize(num) {
+            return num;
+        }
+        factorialize(num);
     });
 
 })();
