@@ -11,14 +11,10 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function() {
-
-        var value = Math.sqrt( 1 );
-        document.write(1 + value );
-
-        var value = Math.sqrt( 21 );
-        document.write(21 + value );
-
+    document.getElementById("run").addEventListener("click", function () {
+        for (i = 1; i <= 22; i++) {
+            document.write(i * i + "<br/>");
+        }
     });
 
 })();
