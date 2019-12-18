@@ -13,24 +13,11 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        var numbers = [];
-        // Handle too few arguments.
-        if (arguments.length < 2) {
-            return numbers;
-        }
-        // Make sure x < y.
-        Array.prototype.sort.call(arguments);
-        // Assign each argument to a local variable.
-        var x = arguments[0];
-        var y = arguments[arguments.length - 1];
-        // Make sure x and y are numbers.
-        if (typeof x != 'number' || typeof y != 'number') {
-            return numbers;
-        }
-        for (var i = x; i < y; i++) {
-            numbers.push(i);
-        }
-        return numbers;
+        var value = Math.sqrt( 1 );
+        document.write(1 + value );
+
+        var value = Math.sqrt( 21 );
+        document.write(21 + value );
 
     });
 
