@@ -13,7 +13,7 @@
 (function() {
     let time = new Date();
 
-    if (time.getHours.getMinutes() >= 18 >= 30 || time.getHours() < 5) {
+    if (time.getHours() >= 18 || time.getHours() < 5) {
         document.getElementById("target").innerHTML = "Good Evening!";
     }
 
