@@ -11,8 +11,21 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    // Just testing, code isn't finished
 
-    // your code here
+    var dt = new Date();
+
+    var options = { timeZone: "America/New_York",
+        hour12: false,
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric'
+    };
+
+// something like "Thursday, February 14, 2019, 02:55"
+    document.getElementById("target").console.log(dt.toLocaleString('en-US', options));
 
 })();
