@@ -9,24 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-// using this stack overflow code as example to try and make it work
-// looking up how to make it work
+// still working on this
+// i am a little stuck..
 (function() {
 
-    function ageCount() {
-        function submitBirthday() {
-            var minutes = 1000 * 60;
-            var hours = minutes * 60;
-            var days = hours * 24;
-            var years = days * 365;
+    document.getElementById("run").addEventListener("click", function() {
 
-            var birthday = Date.parse(document.getElementById("dob-day").value, document.getElementById("dob-month").value, document.getElementById("dob-year").value);
-            var dateNow = new Date();
-            var YearsOld = Math.round((dateNow - birthday) / years);
+        let minutes = 1000 * 60;
+        let hours = minutes * 60;
+        let days = hours * 24;
+        let years = days * 365;
 
-            document.getElementById("displayBirthday").innerHTML = ("You are " + YearsOld + " years old.");
-        }
+        let birthday = new Date(document.getElementById("dob-day").value, document.getElementById("dob-month").value, document.getElementById("dob-year").value);
+        let dateNow = new Date();
+        let YearsOld = Math.round((dateNow - birthday) / years);
+
+        alert("You are " + YearsOld + " years old.");
 
 
-    }
+    })
+
 })();
