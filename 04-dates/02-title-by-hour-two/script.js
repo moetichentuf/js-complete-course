@@ -9,7 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// using code from previous exercise as base
 (function() {
+    let time = new Date();
+
+    if (time.getHours() >= 18 || time.getHours() < 5) {
+        document.getElementById("target").innerHTML = "Good Evening!";
+    }
+
+    else {
+
+        document.getElementById("target").innerHTML = "Hello";
+
+    }
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
