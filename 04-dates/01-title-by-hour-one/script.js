@@ -14,8 +14,8 @@
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // example of code
-   
-    document.getElementById("target").innerHTML = currentHour;
+
+    document.getElementById("target").innerHTML = "hello";
 
 
 
