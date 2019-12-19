@@ -14,19 +14,19 @@
 (function() {
 
     function ageCount() {
-        var date1 = new Date();
-        var  dob= document.getElementById("dob").value;
-        var date2=new Date(dob);
-        var pattern = /^\d{1,2}\/\d{1,2}\/\d{4}$/; //Regex to validate date format (dd/mm/yyyy)
-        if (pattern.test(dob)) {
-            var y1 = date1.getFullYear(); //getting current year
-            var y2 = date2.getFullYear(); //getting dob year
-            var age = y1 - y2;           //calculating age
-            document.write("Age : " + age);
-            return true;
-        } else {
-            alert("Invalid date format. Please Input in (dd/mm/yyyy) format!");
-            return false;
-        }}
+        function submitBirthday() {
+            var minutes = 1000 * 60;
+            var hours = minutes * 60;
+            var days = hours * 24;
+            var years = days * 365;
 
+            var birthday = Date.parse(document.getElementById("dob-day").value, document.getElementById("dob-month").value, document.getElementById("dob-year").value);
+            var dateNow = new Date();
+            var YearsOld = Math.round((dateNow - birthday) / years);
+
+            document.getElementById("displayBirthday").innerHTML = ("You are " + YearsOld + " years old.");
+        }
+
+
+    }
 })();
