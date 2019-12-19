@@ -13,6 +13,11 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
+    // example of code
+    function autoRefreshDiv() {
+        document.getElementById("target").innerHTML = Math.random();
+    }
+    setInterval(autoRefreshDiv, 1000);
     // your code here
 
 })();
