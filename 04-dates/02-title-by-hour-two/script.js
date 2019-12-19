@@ -11,17 +11,18 @@
 
 // using code from previous exercise as base
 (function() {
-    let time = new Date();
 
-    if (time.getHours() >= 18 || time.getHours() < 5) {
-        document.getElementById("target").innerHTML = "Good Evening!";
-    }
+    let time = new Date().getHours();
 
-    else {
 
-        document.getElementById("target").innerHTML = "Hello";
+         if (time < 17.30 && time > 5) {
+        document.getElementById("target").innerHTML = ("Hello");
+        }
 
-    }
+         else {
+        document.getElementById("target").innerHTML = ("Good evening");
+
+        }
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
