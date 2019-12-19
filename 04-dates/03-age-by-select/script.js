@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 // using this stack overflow code as example to try and make it work
+// looking up how to make it work
 (function() {
 
     function ageCount() {
