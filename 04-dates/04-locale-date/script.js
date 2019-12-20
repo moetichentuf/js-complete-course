@@ -11,15 +11,15 @@
 
 (function() {
 
-    // Just testing, code isn't finished
 
+// dates
     let currentDate = new Date(),
         day = currentDate.getDate(),
         month = currentDate.getMonth() + 1,
         year = currentDate.getFullYear();
 
 
-
+// time
 
     let currentTime = new Date(),
         hours = currentTime.getHours(),
@@ -29,7 +29,7 @@
         minutes = "0" + minutes;
     }
 
-
+//  "Change me!" id  is = document.write (what makes it visible)
     document.getElementById("target").innerHTML = document.write(day + "/" + month + "/" + year + "</br>" + hours + ":" + minutes);
 
 
