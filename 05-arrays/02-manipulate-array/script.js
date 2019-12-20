@@ -9,7 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+// alert works, still have to implement Array transformations
+
+(document.getElementById("run").addEventListener("click",  function() {
 
     var fruits = [
         "pomme",
@@ -24,6 +26,6 @@
         "cerise",
     ];
 
-    // your code here
+alert(fruits);
 
-})();
+})());
