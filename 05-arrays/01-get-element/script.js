@@ -26,6 +26,7 @@
         "cherry",
     ];
 
+// Arrays start with 0
 
     alert(fruits[3]);
 
