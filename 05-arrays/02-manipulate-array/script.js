@@ -24,8 +24,10 @@
         "pêche",
         "raisin",
         "cerise",
-    ];
 
+    ];
+    delete fruits[0];
+    delete fruits[9];
 alert(fruits);
 
 })());
