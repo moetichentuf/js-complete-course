@@ -13,7 +13,9 @@
 
 (document.getElementById("run").addEventListener("click",  function() {
 
-    var fruits = [
+    //fruits.unshift("")  adds array item
+
+    let fruits = [
         "pomme",
         "poire",
         "fraise",
@@ -25,9 +27,28 @@
         "raisin",
         "cerise",
 
+
     ];
-    delete fruits[0];
-    delete fruits[9];
-alert(fruits);
+
+    //fruits.unshift("")  adds element to beginning of array
+
+
+
+
+
+
+    // The splice() method modifies the content of an array by removing existing elements and/or adding new elements.
+    fruits.splice(  1, 0, "banana");
+
+    //removes the first element of an array.
+    fruits.shift();
+
+    //removes last element.
+    fruits.pop();
+
+    // adds an element to the end of an array
+    fruits.push("kiwi");
+
+    alert(fruits);
 
 })());
