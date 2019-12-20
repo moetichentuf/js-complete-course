@@ -13,19 +13,12 @@
 
     // Just testing, code isn't finished
 
-    var dt = new Date();
+    var currentDate = new Date(),
+        day = currentDate.getDate(),
+        month = currentDate.getMonth() + 1,
+        year = currentDate.getFullYear();
+    document.getElementById("target").innerHTML = document.write(day + "/" + month + "/" + year)
 
-    var options = { timeZone: "America/New_York",
-        hour12: false,
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric'
-    };
 
-// something like "Thursday, February 14, 2019, 02:55"
-    document.getElementById("target").console.log(dt.toLocaleString('en-US', options));
 
 })();
