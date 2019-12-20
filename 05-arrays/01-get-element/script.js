@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "apple",
         "pear",
         "raspberry",
@@ -26,6 +26,7 @@
         "cherry",
     ];
 
-    // your code here
+
+        alert(fruits[3]);
 
 })();
