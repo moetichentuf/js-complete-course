@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(document.getElementById("run").addEventListener("click", function() {
 
     var fruits = [
         "pomme",
@@ -26,11 +26,10 @@
         "cerise",
     ];
 
-
-
-// Here array.values() function is called.
-    let iterator = fruits.values();
-    for (let elements of iterator) {
-        console.log(elements);
+    function iterate(item) {
+        console.log(item);
     }
-})();
+
+    fruits.forEach(iterate);
+
+}));
