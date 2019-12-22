@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (document.getElementById("run").addEventListener("click",  function(lala) {
-    var counter = 0;
+    let counter = 0;
     let fruits = [
         "apple",
         "pear",
@@ -26,8 +26,9 @@
         "cherry",
     ];
 
+// id named "text" made on <p>  to display the fruits on
 
-    var my_div = document.getElementById('text');
+    let my_div = document.getElementById('text');
     function next_word()
     {
         my_div.innerHTML = fruits[counter % fruits.length];
