@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    var fruits = [
+(document.getElementById("run").addEventListener("click",  function(lala) {
+    var counter = 0;
+    let fruits = [
         "apple",
         "pear",
         "raspberry",
@@ -26,6 +26,15 @@
         "cherry",
     ];
 
-    // your code here
 
-})();
+    var my_div = document.getElementById('text');
+    function next_word()
+    {
+        my_div.innerHTML = fruits[counter % fruits.length];
+        counter += 1;
+    }
+    setInterval(next_word, 500);
+
+
+
+})());
