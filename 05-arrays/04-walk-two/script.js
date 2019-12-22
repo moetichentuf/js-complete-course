@@ -26,6 +26,11 @@
         "cerise",
     ];
 
-    // your code here
 
+
+// Here array.values() function is called.
+    let iterator = fruits.values();
+    for (let elements of iterator) {
+        console.log(elements);
+    }
 })();
