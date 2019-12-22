@@ -9,7 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(document.getElementById("run").addEventListener("click",  function(lala) {
+(document.getElementById("run").addEventListener("click",  function() {
+
     let counter = 0;
     let fruits = [
         "apple",
@@ -26,7 +27,7 @@
         "cherry",
     ];
 
-// id named "text" made on <p>  to display the fruits on
+// id named "text" made on <p> to display the fruits on
 
     let my_div = document.getElementById('text');
     function next_word()
