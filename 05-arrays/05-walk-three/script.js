@@ -43,7 +43,7 @@
     let arr = [];
     people.forEach(function(val) {
         if (!o.hasOwnProperty(val.firstname)) {
-         
+
             let idx = arr.push(val.firstname);
             o[val.firstname] = { idx: idx - 1, val: val };
 

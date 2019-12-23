@@ -19,7 +19,7 @@
     if (time.getHours() >= 18 || time.getHours() < 5) {
         document.getElementById("target").innerHTML = "Good Evening!";
     }
-    
+
     else {
 
     document.getElementById("target").innerHTML = "Hello";
