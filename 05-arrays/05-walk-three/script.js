@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(document.getElementById("run").addEventListener("click", function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Garald",
             lastname: "Freschi",
@@ -39,6 +39,21 @@
         },
     ];
 
-    // your code here
+    let o = {};
+    let arr = [];
+    people.forEach(function(val) {
+        if (!o.hasOwnProperty(val.firstname)) {
+         
+            let idx = arr.push(val.firstname);
+            o[val.firstname] = { idx: idx - 1, val: val };
 
-})();
+        }
+        else {
+
+            arr.push(val.firstname + " " + val.lastname.substr(0, 1));
+            arr[o[val.firstname].idx] = o[val.firstname].val.firstname + " " + o[val.firstname].val.lastname.substr(0, 1);
+        }
+    })
+    console.log(arr);
+
+}))();
