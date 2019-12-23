@@ -11,8 +11,8 @@
 
 (document.getElementById("run").addEventListener("click", function() {
 
-// still struggling with this assignment
-    
+
+
     var fruits = [
         "pomme",
         "poire",
