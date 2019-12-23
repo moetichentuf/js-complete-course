@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(document.getElementById("run").addEventListener("click", function() {
 
-    var fruits = [
+    let fruits = [
         "apple",
         "perry",
         "strawberry",
@@ -26,6 +26,13 @@
         "cherry",
     ];
 
-    // your code here
+    let returnDialog = confirm('Do you want to delete the record?');
+    if (fruits) {
+        // code case oke
+        console.log('click oke');
+    } else {
+        // code case no
+        console.log('click no');
+    }
 
-})();
+}))();
