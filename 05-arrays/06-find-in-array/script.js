@@ -94,7 +94,7 @@
     people.forEach(function (find) {
         // looks for "last name" and "first name"
         if (find.lastname == "Dupont" && find.firstname == "Jean"){
-            // shows the email 
+            // shows the email
             console.log(find.email);
             // shows 8 on console
             console.log(people.indexOf(find));

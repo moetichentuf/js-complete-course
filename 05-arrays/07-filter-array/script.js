@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(document.getElementById("run").addEventListener("click", function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Dreddy",
             lastname: "Nussgen",
@@ -87,8 +87,17 @@
             lastname: "Grimbleby",
             age: 81,
         },
+
+
     ];
 
-    // your code here
+    let olderThan18 = [];
 
-})();
+    for (let i = 0; i < people.length; i++) {
+        if(people[i].age > 18){
+            olderThan18.push(people[i].age)
+        }
+    }
+
+    console.log(olderThan18); // [34, 23, 51, 40]
+}))();
