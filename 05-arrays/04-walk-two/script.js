@@ -11,6 +11,8 @@
 
 (document.getElementById("run").addEventListener("click", function() {
 
+// still struggling with this assignment
+    
     var fruits = [
         "pomme",
         "poire",
@@ -26,10 +28,8 @@
         "cerise",
     ];
 
-    function iterate(item) {
-        console.log(item);
-    }
 
-    fruits.forEach(iterate);
+    for (let value of fruits)
+        console.log( value );
 
 }));
