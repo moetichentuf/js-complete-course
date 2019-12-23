@@ -13,13 +13,17 @@ document.getElementById("run").addEventListener("click",function() {
 
         let arr = [];
         let sum = 0;
+
         for (i=0; i<10; i++) {
             arr[i] = Math.floor(Math.random() * 100) + 1;
+
             document.getElementById("n-" +( i + 1)).innerHTML = arr[i];
             sum=sum+arr[i];
 
         }
 
+    document.getElementById("min").innerHTML=Math.min.apply(null,arr);
+    document.getElementById("max").innerHTML=Math.max.apply(null,arr);
         document.getElementById("sum").innerHTML=sum;
         document.getElementById("average").innerHTML=sum/arr.length;
 
