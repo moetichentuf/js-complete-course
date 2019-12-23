@@ -26,13 +26,14 @@
         "cherry",
     ];
 
-    let returnDialog = confirm('Do you want to delete the record?');
-    if (fruits) {
-        // code case oke
-        console.log('click oke');
-    } else {
-        // code case no
-        console.log('click no');
+
+// The includes() method determines whether an array contains a specified element.
+    if (fruits.includes ("apple")) {
+        console.log("yes")
+    }
+
+    else {
+        console.log("no")
     }
 
 }))();
