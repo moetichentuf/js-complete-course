@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(document.getElementById("run").addEventListener("click", function() {
 
     var fruits = [
         "cerise",
@@ -28,6 +28,11 @@
         "cerise",
     ];
 
-    // your code here
+    var uniq = fruits.reduce(function(a,b){
+        if (a.indexOf(b) < 0 ) a.push(b);
+        return a;
+    },[]);
 
-})();
+    console.log(uniq)
+
+}))();
