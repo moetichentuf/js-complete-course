@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+    x=document.getElementsByClassName("material");  // Find the elements
+    for(var i = 0; i < x.length; i++){
+        x[i].innerText="OWNED!";    // Change the content
+    }
 
 })();
