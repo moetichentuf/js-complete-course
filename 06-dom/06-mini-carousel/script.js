@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(document.getElementById("next").addEventListener("click", function nextPic() {
+(document.getElementById("next").addEventListener("click", function myPicture() {
 
     let currentImageIndex = 0;
     let myPicture = [
