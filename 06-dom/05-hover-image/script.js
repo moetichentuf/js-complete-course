@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
-
+    function changeImage(imgSrc){
+        document.getElementById("photo").src=imgSrc;
+    }
+    function revertImage(imgSrc){
+        document.getElementById("photo").src=imgSrc;
+    }
 })();
