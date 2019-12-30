@@ -10,9 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-    var target = document.getElementById('target');
-    let counter = 0;
-    let gallery= [
+
+    var gallery= [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -20,12 +19,6 @@
         "../../_shared/img/map.svg",
     ];
 
-    function nextPic() {
-        counter += 1;
-        if (counter > gallery.length -1) {
-            counter = 0;
-        }
-        target.src = gallery[counter];
-    }
+    // your code here
 
 })();
