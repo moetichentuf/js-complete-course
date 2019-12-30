@@ -16,7 +16,7 @@
 
       let y =  document.getElementsByTagName("img")[0].getAttributeNode("data-hover").value;
 
-        document.getElementsByTagName("img")[0].setAttribute("src", y).value;
+        document.getElementsByTagName("img")[0].setAttribute("src", y);
 
     });
        // document.getElementById("photo").src = "../../_shared/img/kiss.svg";
