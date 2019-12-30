@@ -10,11 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
+    let x=document.getElementsByTagName("img")[0];
 
-    function changeImage(imgSrc){
-        document.getElementById("photo").src=imgSrc;
-    }
-    function revertImage(imgSrc){
-        document.getElementById("photo").src=imgSrc;
-    }
+    x.addEventListener("mouseover", function(){
+
+      let y =  document.getElementsByTagName("img")[0].getAttributeNode("data-hover").value;
+
+        document.getElementsByTagName("img")[0].setAttribute("src", y).value;
+
+    });
+       // document.getElementById("photo").src = "../../_shared/img/kiss.svg";
+
+
+       // document.getElementById("photo").src = "../../_shared/img/kiss-wink-heart.svg";
+
 })();
