@@ -9,9 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(document.getElementById("next").addEventListener("click", function nextPic() {
 
-    var gallery= [
+    let currentImageIndex = 0;
+    let myPicture = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -19,6 +20,11 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
 
-})();
+
+
+        currentImageIndex = (currentImageIndex + 1) % myPicture.length;
+        document.images[0].src = myPicture[currentImageIndex];
+
+
+})());
