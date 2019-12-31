@@ -11,22 +11,27 @@
 
 (function() {
 
-    var result = 'x ';
-    for (var i = 0; i < 11; i++) {
+    var color_td;
+    document.write("<table border='1px'>");
 
-        for (var j = 0; j < 11; j++) {
+    for(var i = 1; i < 10; i++) {
 
-            if(i == 0 && j > 0){
-                result += '[' + j + ']';
+        document.write("<tr style='height:30px;'>");
+
+        for(var j = 1; j < 10; j++) {
+
+            if(j == 1 || i == 1) {
+                color_td = "#ccc";
             }
-            else if(j == 0 && i>0){
-                result += '[' + i + '] ';
+            else {
+                color_td = "#fff";
             }
-            else if(i>0 && j>0){
-                result += (i*j) + ' ';
-            }
+
+            document.write("<td style='width:30px;background-color:" + color_td + "'>" + i*j + "</td>");
         }
-        result += '\n'
+        document.write("</tr>");
     }
-     document.getElementById("target").innerHTML = result;
+
+     document.getElementById("target").innerHTML=("</table>");
+
 })();
