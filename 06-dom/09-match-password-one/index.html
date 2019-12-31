@@ -34,7 +34,7 @@
                 </p>
             </section>
             <section class="material">
-                <form action="#" method="post">
+                <form onSubmit = "return checkPassword(this)" action="#" method="post">
                     <div class="field">
                         <label for="pass-one">Password:</label>
                         <input type="text" name="pass-one" id="pass-one" />
@@ -44,7 +44,7 @@
                         <input type="text" name="pass-two" id="pass-two" />
                     </div>
                     <div class="actions">
-                        <button type="button" id="run">Run the script</button>
+                        <button onclick="myFunction(this.id)" type="button" id="run">Run the script</button>
                     </div>
                 </form>
             </section>
