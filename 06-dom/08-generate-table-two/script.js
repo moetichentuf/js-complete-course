@@ -14,11 +14,11 @@
     var color_td;
     document.write("<table border='1px'>");
 
-    for(var i = 1; i < 10; i++) {
+    for(var i = 1; i < 11; i++) {
 
         document.write("<tr style='height:30px;'>");
 
-        for(var j = 1; j < 10; j++) {
+        for(let j = 1; j < 11; j++) {
 
             if(j == 1 || i == 1) {
                 color_td = "#ccc";
