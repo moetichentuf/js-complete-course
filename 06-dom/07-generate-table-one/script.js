@@ -20,20 +20,18 @@
     myArray[5] = 33;
     myArray[6] = 114.980;
     myArray[7] = 5;
-
+    myArray[8] = 5;
+    myArray[9] = 5;
     let myTable= "<table><tr><td style='width: 100px; color: red;'>Col Head 1</td>";
-    myTable+= "<td style='width: 100px; color: red; text-align: right;'>Col Head 2</td>";
-    myTable+="<td style='width: 100px; color: red; text-align: right;'>Col Head 3</td></tr>";
 
-    myTable+="<tr><td style='width: 100px;                   '>---------------</td>";
-    myTable+="<td     style='width: 100px; text-align: right;'>---------------</td>";
-    myTable+="<td     style='width: 100px; text-align: right;'>---------------</td></tr>";
+
+   
+
 
     for (var i=0; i<8; i++) {
-        myTable+="<tr><td style='width: 100px;'>Number " + i + " is:</td>";
+        myTable+="<tr><td style='width: 100px;'>Number " + i ;
         myArray[i] = myArray[i].toFixed(3);
-        myTable+="<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td>";
-        myTable+="<td style='width: 100px; text-align: right;'>" + myArray[i] + "</td></tr>";
+
     }
     myTable+="</table>";
 
