@@ -9,22 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(document.getElementById("next").addEventListener("click", function myPicture() {
+(function() {
 
-    let currentImageIndex = 0;
-    let myPicture = [
+
+
+    let pic = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
         "../../_shared/img/lemon.svg",
-        "../../_shared/img/map.svg",
-    ];
+        "../../_shared/img/map.svg",];
+    let imageNumber = 0;
+    document.getElementById("myButton").addEventListener('click', changeImage);
+    function changeImage() {
+        imageNumber = (imageNumber + 1) % pic.length;
+        document.getElementById("myImage").src = pic[imageNumber];
+    }
 
-
-
-
-        currentImageIndex = (currentImageIndex + 1) % myPicture.length;
-        document.images[0].src = myPicture[currentImageIndex];
-
-
-})());
+})();
