@@ -12,7 +12,7 @@
 (function() {
 
     var color_td;
-    document.write("<table border='1px'>");
+    document.write("<table style='width:30px; margin: auto; margin-top: 2%; border='1px'>");
 
     for(var i = 1; i < 11; i++) {
 
