@@ -13,22 +13,22 @@
 
     let myArray    = new Array();
     myArray[0] = 1;
-    myArray[1] = 2.218;
-    myArray[2] = 33;
-    myArray[3] = 114.94;
+    myArray[1] = 2;
+    myArray[2] = 3;
+    myArray[3] = 4;
     myArray[4] = 5;
-    myArray[5] = 33;
-    myArray[6] = 114.980;
-    myArray[7] = 5;
-    myArray[8] = 5;
-    myArray[9] = 5;
+    myArray[5] = 6;
+    myArray[6] = 7;
+    myArray[7] = 8;
+    myArray[8] = 9;
+    myArray[9] = 10;
     let myTable= "<table><tr><td style='width: 100px; color: red;'>Col Head 1</td>";
 
 
-   
 
 
-    for (var i=0; i<8; i++) {
+
+    for (let i=0; i<10; i++) {
         myTable+="<tr><td style='width: 100px;'>Number " + i ;
         myArray[i] = myArray[i].toFixed(3);
 
