@@ -36,7 +36,7 @@
                 <form action="#" method="post">
                     <div class="field with-indicator">
                         <label for="pass-one">Password:</label>
-                        <input type="text" name="pass-one" id="pass-one" />
+                        <input onkeyup="checkPass(); return false;" type="text" name="pass-one" id="pass-one" />
                         <span id="validity" class="indicator">Not ok</span>
                     </div>
                 </form>
