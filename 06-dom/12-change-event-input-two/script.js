@@ -9,24 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function checkPass()
-{
-    var pass1 = document.getElementById('pass-one');
-    var message = document.getElementById('validity');
-
-    var goodColor = "#66cc66";
-    var badColor = "#ff6666";
+function checkPass() {
+    let pass1 = document.getElementById('pass-one');
+    let message = document.getElementById('validity');
 
 
-    if(pass1.value.length > 5){
-        pass1.style.backgroundColor = goodColor;
-        message.style.color = goodColor;
-        message.innerHTML = "character number ok!";
+
+    if(pass1.value.length > 8){
+
+
+        message.innerText = "character number ok!";
     }
-    else{
-        pass1.style.backgroundColor = badColor;
-        message.style.color = badColor;
-        message.innerHTML = " you have to enter at least 6 digit!"
-    }
+
 
 }
