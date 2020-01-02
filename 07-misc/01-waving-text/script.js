@@ -11,6 +11,23 @@
 
 (function() {
 
-    // your code here
+    let letterContainer = document.getElementById("target");
+
+    let letters = letterContainer.innerText;
+
+    letters = letters.split("");
+
+    letterContainer.innerText = "";
+
+    let offset = 0;
+
+    letters.forEach(function(letter, i){
+        let wrap = document.createElement("span");
+        wrap.innerText = letter;
+        wrap.style.position = "relative";
+        wrap.style.bottom = i+"px";
+        wrap.style.transform = "rotate("+-i+"deg)";
+        letterContainer.appendChild(wrap);
+    })
 
 })();
