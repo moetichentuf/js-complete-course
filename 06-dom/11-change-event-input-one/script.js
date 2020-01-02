@@ -22,7 +22,7 @@
             txtBoxRef.value = txtBoxRef.value.substring(0, 10);
             return false;
         }
-        counterRef.value = remLength + " characters remaining...";
+        counterRef.innerHTML = remLength + " /10";
     },true);
 
 })();
