@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+document.getElementById("run").addEventListener("click", function(pswd) {
 
 
 
@@ -17,7 +17,8 @@
         let pass2 = document.getElementById('pass-two');
         let color;
         let color2;
-        function validatePassword() {
+
+        function validatePassword(pswd) {
             let status = false;
             if (pass2.value === pass1.value) {
                 status = true;
@@ -31,9 +32,11 @@
                 color = "#ff1800";
                 pass1.style.borderColor = color;
                 pass2.style.borderColor = color;
+
             }
 
             return status = color = "#4bff12";
+
         }
 
         pass1.addEventListener('change', validatePassword);
@@ -41,4 +44,4 @@
 
 
 
-})();
+});
