@@ -13,7 +13,7 @@ function checkPass() {
     let pass1 = document.getElementById('pass-one');
     let message = document.getElementById('validity');
 
-
+// when i close my function I get an error, not sure yet why
 
     if(pass1.value.length > 8){
 
