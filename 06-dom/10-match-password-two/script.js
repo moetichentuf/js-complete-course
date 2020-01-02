@@ -15,7 +15,7 @@ document.getElementById("run").addEventListener("click", function() {
 
         let pass1 = document.getElementById('pass-one');
         let pass2 = document.getElementById('pass-two');
-        let color;
+        let color = "#ff1800";
         let color2 = "#4bff12";
 
         let status = false;
@@ -29,12 +29,12 @@ document.getElementById("run").addEventListener("click", function() {
                 pass2.style.borderColor = color2;
 
             } else  {
-                pass2.setCustomValidity('lala');
-                color = "#ff1800";
+
+
                 pass1.style.borderColor = color;
                 pass2.style.borderColor = color;
 
-
+                alert("wrong password")  ;
             }
 
 
