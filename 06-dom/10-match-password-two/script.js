@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-document.getElementById("run").addEventListener("click", function(pswd) {
+document.getElementById("run").addEventListener("click", function() {
 
 
 
@@ -17,9 +17,10 @@ document.getElementById("run").addEventListener("click", function(pswd) {
         let pass2 = document.getElementById('pass-two');
         let color;
         let color2;
+       let errors = pass2.getElementsByClassName('error_form');
+        let status = false;
+        function validatePassword() {
 
-        function validatePassword(pswd) {
-            let status = false;
             if (pass2.value === pass1.value) {
                 status = true;
                 pass2.setCustomValidity('');
@@ -28,15 +29,14 @@ document.getElementById("run").addEventListener("click", function(pswd) {
                 pass2.style.borderColor = color;
 
             } else  {
-                pass2.setCustomValidity('Both passwords do not match');
+
                 color = "#ff1800";
                 pass1.style.borderColor = color;
                 pass2.style.borderColor = color;
-
+                errors = "lala";
             }
 
             return status = color = "#4bff12";
-
         }
 
         pass1.addEventListener('change', validatePassword);
