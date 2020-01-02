@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
+    let txtBoxRef = document.getElementById("pass-one");
+    let counterRef = document.getElementById("counter");
+    let remLength = 0;
+    txtBoxRef.addEventListener("keydown",function(){
+
+        remLength = 10 - parseInt(txtBoxRef.value.length);
+        if(remLength < 0)
+        {
+            txtBoxRef.value = txtBoxRef.value.substring(0, 10);
+            return false;
+        }
+        counterRef.value = remLength + " characters remaining...";
+    },true);
 
 })();
