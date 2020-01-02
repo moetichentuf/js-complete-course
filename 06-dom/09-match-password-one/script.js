@@ -9,31 +9,24 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(document.getElementById("run").addEventListener("click", function myFunction() {
+(document.getElementById("run").addEventListener("click", function () {
 
-    function checkPassword(form) {
-        password1 = form.getElementById("pass-one").value;
-        password2 = form.getElementById("pass-two").value;
+    var pass1 = document.getElementById('pass-one');
+    var pass2 = document.getElementById('pass-two');
 
-        // If password not entered
-        if (password1 == '')
-            alert ("Please enter Password");
-
-        // If confirm password not entered
-        else if (password2 == '')
-            alert ("Please enter confirm password");
-
-        // If Not same return False.
-        else if (password1 != password2) {
-            alert ("\nPassword did not match: Please try again...");
-            return false;
+    function validatePassword() {
+        var status = false;
+        if (pass2.value === pass1.value) {
+            status = true;
+            pass2.setCustomValidity('');
+        } else {
+            pass2.setCustomValidity('Both passwords do not match');
         }
-
-        // If same return True.
-        else{
-            alert("Password Match: Welcome to GeeksforGeeks!");
-            return true;
-        }
+       alert(status);
+        return status;
     }
+
+    pass1.addEventListener('change', validatePassword);
+    pass2.addEventListener('keyup', validatePassword);
 
 })());
