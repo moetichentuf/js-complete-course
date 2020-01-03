@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function typeWriter () {
 
-    // your code here
+    var i = 0;
+    var txt = 'Lorem ipsum typing effect!'; /* The text */
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+
+        if (i < txt.length) {
+            document.getElementById("target").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+
 
 })();
