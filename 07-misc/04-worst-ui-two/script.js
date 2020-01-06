@@ -10,7 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("part-one").addEventListener("click", function myfunction () {
 
-    // your code here
+
+
+
+
+
+
+    });
+
+
 
 })();
