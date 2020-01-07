@@ -10,11 +10,14 @@
 // You will have time to focus on it later.
 
 function myFunction() {
+    var lala = document.getElementById("increment");
+    var button = document.getElementById("target"),
+        count = 0;
+    lala.onclick = function() {
+        count += 1;
+        button.innerHTML =  count;
+    };
 
-    var count = 0;
-    count++;
-    var printer = count;
 
-    let textbox3 = document.getElementById('target');
-    textbox3.innerHTML = printer;
+
 }
