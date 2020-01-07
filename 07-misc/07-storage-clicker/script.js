@@ -9,8 +9,12 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function myFunction() {
 
-    // your code here
+    var count = 0;
+    count++;
+    var printer = count;
 
-})();
+    let textbox3 = document.getElementById('target');
+    textbox3.innerHTML = printer;
+}
