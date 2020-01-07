@@ -11,20 +11,20 @@
 
 (function() {
 
-    var number = Math.floor(Math.random() * 100 + 1);
+    let number = Math.floor(Math.random() * 100 + 1);
     // Just for Test
-    document.getElementById('hints').innerHTML += '<br />' + number;
+
     //guess variable to store the guessed number by user
-    var guess;
+    let guess;
     //output to store output to the user
-    var output;
+    let output;
     //if the user guessed the number or not, initialize it to false
-    var guessed = false;
+    let guessed = false;
 
     //do/while loop, while condition is based on if the user NOT guessing the number (e.g. guessed == false)
     do {
         guess = prompt("Think of a number between 1 and 100, what is your number?");
-       alert( "You guessed the number " + guess);
+
         if (guess > number) {
           alert(  "You guessed too high, think smaller");
             guessed = false;
