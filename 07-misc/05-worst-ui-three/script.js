@@ -22,3 +22,32 @@
     }
 
 
+function genRanNumb2() {
+    let min = document.getElementsByTagName("input")[1].getAttribute("data-min");
+    let max = document.getElementsByTagName("input")[1].getAttribute("data-max");
+
+    let random = Math.floor(Math.random() * (+max - +min)) + +min;
+    let textbox3 = document.getElementById('part-two');
+    textbox3.value = random;
+
+}
+
+function genRanNumb3() {
+    let min = document.getElementsByTagName("input")[2].getAttribute("data-min");
+    let max = document.getElementsByTagName("input")[2].getAttribute("data-max");
+
+    let random = Math.floor(Math.random() * (+max - +min)) + +min;
+    let textbox3 = document.getElementById('part-three');
+    textbox3.value = random;
+
+}
+
+function genRanNumb4() {
+    let min = document.getElementsByTagName("input")[3].getAttribute("data-min");
+    let max = document.getElementsByTagName("input")[3].getAttribute("data-max");
+
+    let random = Math.floor(Math.random() * (+max - +min)) + +min;
+    let textbox3 = document.getElementById('part-four');
+    textbox3.value = random;
+
+}
