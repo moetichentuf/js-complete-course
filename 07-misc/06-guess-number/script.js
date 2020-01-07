@@ -24,13 +24,13 @@
     //do/while loop, while condition is based on if the user NOT guessing the number (e.g. guessed == false)
     do {
         guess = prompt("Think of a number between 1 and 100, what is your number?");
-        document.getElementById('hints').innerHTML += '<br />' + "You guessed the number " + guess;
+       alert( "You guessed the number " + guess);
         if (guess > number) {
-            document.getElementById('hints').innerHTML += '<br />' + "You guessed too high, think smaller";
+          alert(  "You guessed too high, think smaller");
             guessed = false;
         }
         else if (guess < number) {
-            document.getElementById('hints').innerHTML += '<br />' + "You guessed too low, think bigger";
+           alert( "You guessed too low, think bigger");
             guessed = false;
         }
         else {
