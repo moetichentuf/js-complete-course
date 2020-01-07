@@ -11,17 +11,18 @@
 
 (() => {
     let request = new XMLHttpRequest();
-document.getElementById("run").addEventListener("click", function  () {
+document.getElementById("run").addEventListener("click", function  (lala) {
 
 
 // Open a new connection, using the GET request on the URL endpoint
-    request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+    request.open('GET', '../../_shared/api.json', true);
 
     request.onload = function() {
         // Begin accessing JSON data here
     };
 
 // Send request
-    request.send()
+    request.send();
+console.log(lala);
 });
 })();
