@@ -10,5 +10,18 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let request = new XMLHttpRequest();
+document.getElementById("run").addEventListener("click", function  () {
+
+
+// Open a new connection, using the GET request on the URL endpoint
+    request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+
+    request.onload = function() {
+        // Begin accessing JSON data here
+    };
+
+// Send request
+    request.send()
+});
 })();
