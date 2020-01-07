@@ -9,13 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
 
     function genRanNumb() {
-        var max = parseFloat(document.getAttribute("data-min").value,10),
-            min = parseFloat(document.getElementById("min").value,10);
+        let min = document.getElementsByTagName("input")[0].getAttribute("data-min");
+           let max = document.getElementsByTagName("input")[0].getAttribute("data-max");
 
-        document.getElementById('fix-part-one').innerHTML=Math.floor(Math.random()*(max-min+1)+min);
+        document.getElementById('part-one').innerHTML=Math.floor(Math.random()*(max-min+1)+min);
     }
 
-})();
+
