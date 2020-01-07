@@ -16,9 +16,9 @@
         let max = document.getElementsByTagName("input")[0].getAttribute("data-max");
 
         let random = Math.floor(Math.random() * (+max - +min)) + +min;
+        let textbox3 = document.getElementById('part-one');
+        textbox3.value = random;
 
-
-console.log(random);
     }
 
 
