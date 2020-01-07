@@ -13,11 +13,10 @@ function myFunction() {
     var lala = document.getElementById("increment");
     var button = document.getElementById("target"),
         count = 0;
-    lala.onclick = function() {
-        count += 1;
-        button.innerHTML =  count;
+    lala.onclick = function () {
+        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        button.innerHTML = localStorage.clickcount;
     };
-
 
 
 }
