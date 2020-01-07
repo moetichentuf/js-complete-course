@@ -11,11 +11,11 @@
 
 
 
-    function genRanNumb(guess) {
+    function genRanNumb() {
         let min = document.getElementsByTagName("input")[0].getAttribute("data-min");
         let max = document.getElementsByTagName("input")[0].getAttribute("data-max");
 
-        var random = Math.random() * (+max - +min) + +min;
+        let random = Math.floor(Math.random() * (+max - +min)) + +min;
 
 
 console.log(random);
