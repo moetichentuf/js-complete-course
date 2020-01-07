@@ -10,10 +10,10 @@
 // You will have time to focus on it later.
 
 function myFunction() {
-    var lala = document.getElementById("increment");
+    var increment = document.getElementById("increment");
     var button = document.getElementById("target"),
         count = 0;
-    lala.onclick = function () {
+    increment.onclick = function () {
         localStorage.clickcount = Number(localStorage.clickcount) + 1;
         button.innerHTML = localStorage.clickcount;
     };
