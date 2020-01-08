@@ -10,5 +10,37 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        fetch("../../_shared/api.json")
+
+            // on click, fetch api
+            .then((function (link) {
+                return link.json();
+            }))
+
+            .then(function (data) {
+
+                let temp = document.getElementById("tpl-hero");
+                //make a copy of the html content so you can paste it in the target
+
+                for (let i = 0; i < data.heroes.length; i++) {
+
+                    //puts the array items in the innerhtml of the copy
+                    let copy = temp.content.cloneNode(true);
+
+
+                    // get lists from json
+                    copy.querySelector(".name").innerHTML = data.heroes[i].name;
+                    copy.querySelector(".alter-ego").innerHTML = data.heroes[i].alterEgo;
+                    copy.querySelector(".powers").innerHTML = data.heroes[i].abilities;
+
+                    document.getElementById("target").appendChild(copy);
+                }
+
+            })
+    });
+
 })();
